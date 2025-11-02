@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0 auto;
+    overflow-x: hidden; /* para evitar scroll horizontal si hay desbordes */
+    background-color: #ff7f81;
+    font-family: Pixelify Sans, sans-serif;
+}
+  
+/*Navbar*/
+#navbar{
+  background: rgb(243,239,227,0.7);
+}
+
+/* Estilos para aboutMe */
+img {
+    height: 80vh;
+    height: 80dvh;
+}
+
+#aboutMe .row {
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutMe img {
+  max-width: 100%;
+  height: 80vh;
+}
+
+p.name {
+    font-size: 60px;
+    text-shadow: -3px -3px black, 3px -3px black, -3px 3px black, 3px 3px black;
+    
+}
+p.studing {
+    font-size: 20px;
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+}
+p.inProgress {
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+}
+/*card habilidades*/
+.card{
+  background: rgb(243,239,227,0.7);
+}
+
+/* Estilos para projects */
+.proyectos-section {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 2rem;
+  padding: 2rem;
+  color: #222;
+}
+
+.proyectos-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Buscador con botón de limpiar */
+.buscador-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#buscador {
+  width: 100%;
+  padding: 0.7rem 2.2rem 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#clearBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+  display: none; /* Oculto por defecto */
+}
+
+/* Contenedor con scroll horizontal */
+.proyectos-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+/* Scroll personalizado */
+.proyectos-container::-webkit-scrollbar {
+  height: 10px;
+}
+.proyectos-container::-webkit-scrollbar-track {
+  background: #d6a1a1;
+  border-radius: 10px;
+}
+.proyectos-container::-webkit-scrollbar-thumb {
+  background: #8b5e5e;
+  border-radius: 10px;
+}
+
+/* Tarjetas */
+.proyecto-card {
+  background: rgb(243,239,227,0.7);
+  border-radius: 10px;
+  width: 100%;
+  min-width: 260px;
+  max-width: 320px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+}
+.proyecto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.proyecto-card h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+.proyecto-card p {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+/* Contenedor principal de la escena pixel */
+.escena-pixel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centra verticalmente */
+  height: 100%;
+  max-height: 90vh;
+}
+
+/* Imagen o SVG del escritorio */
+.escena-pixel .svg-container {
+  width: auto;
+  height: 60vh;
+  aspect-ratio: 1184 / 864;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.escena-pixel svg {
+  width: 100%;
+  height: 100%;
+}
+
+.escena-pixel .ventana {
+  transition: fill 2s ease;
+}
+
+.contact .row {
+  align-items: center;
+}
+
+.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.contact .escena-pixel {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .contact .escena-pixel {
+    margin-bottom: 0;
+  }
+}
+
+/*Footer*/
+#footer{
+  background: rgb(243,239,227,0.7);
+}
