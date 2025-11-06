@@ -56,6 +56,27 @@ p.studing {
 p.inProgress {
     text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
 }
+
+.dots::after {
+  content: "";
+  animation: dots 2s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: " ";
+  }
+  33% {
+    content: " .";
+  }
+  66% {
+    content: " . .";
+  }
+  100% {
+    content: " . . .";
+  }
+}
+
 /*card habilidades*/
 .card{
   background: rgb(243,239,227,0.7);
